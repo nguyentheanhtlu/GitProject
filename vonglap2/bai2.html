@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature = +prompt('Nhap nhiet do');
+
+    while (temperature ){
+        if(temperature <= 20){
+            alert('Tang nhiet do')
+            break;
+        }
+        else if(temperature >= 100){
+            alert('Giam nhiet do')
+            break
+        }
+        else {
+            alert('Nhiet do binh thuong')
+            break
+        }
+
+    }
+    // do {
+    //     temperature = +prompt('Enter temperature');
+    //     if (temperature > 100) {
+    //         alert('reduce the temperature');
+    //         temperature = +prompt('Enter temperature ');
+    //         break;
+    //
+    //     } else if (temperature < 20) {
+    //         alert('increased temperature');
+    //         temperature = +prompt('Enter temperature ');
+    //         break;
+    //     }
+    //     else alert('normal temperature');
+    //     break
+    // }
+    // while (temperature) ;
+
+
+</script>
+
+</body>
+</html>

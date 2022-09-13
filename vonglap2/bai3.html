@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = 1;
+  let b = 1;
+  let temp
+  document.write(a + '<br> ' + b + ' <br> ')
+  let input = +prompt('Nhap so fibo can in : ')
+  for (let i = 0; i < input ; i++) {
+      temp = a + b
+      a = b
+      b = temp
+      document.write(temp + ' <br> ')
+  }
+
+</script>
+</body>
+</html>

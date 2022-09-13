@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1
+    let b = 1;
+    let c;
+    let tong = 2;
+    for (let count = 3; count <= 20; count++) {
+        c = b;
+        b = a + b;
+        a = c;
+        tong = tong + b;
+    }
+    document.write('Tong 20 so dau tien trong day Fibonacci : '+tong)
+</script>
+</body>
+</html>
