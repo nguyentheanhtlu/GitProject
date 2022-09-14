@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = Array.from(window.prompt());
+    let str2 = [];
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === str[i].toLowerCase()) {
+            str[i] = str[i].toUpperCase();
+            str2.push(str[i]);
+        } else if (str[i] === str[i].toUpperCase()) {
+            str[i] = str[i].toLowerCase();
+            str2.push(str[i]);
+        }
+    }
+    document.write(str2.join(''));
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
