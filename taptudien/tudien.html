@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap" >
+<button onclick="dich()" id="dich">Dịch</button>
+<p id="show">
+</p>
+<script>
+    function dich(){
+        let str = ['apple','banana','brave','mangoes'];
+        let str1 = ['quả táo','quả chuối','quả cam','quả xoài'];
+        let a = document.getElementById('nhap').value
+       for (let i =0 ; i < str.length;i++) {
+           if (str[i] === a)
+
+               document.getElementById('show').innerHTML = str1[i]
+       }
+    }
+
+</script>
+
+</body>
+</html>

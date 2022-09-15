@@ -6,19 +6,19 @@
 </head>
 <body>
 <script>
-    let a = +prompt('nhap day so bat ki :' );
-    let str=a.toString();
-    let b=[str[0]];
-    for(let i=1;i<str.length;i++){
-        if ((str[i-1]%2 === 0)&&(str[i]%2 ===0)){
-            b.push('-',str[i]);
-        }
-        else {
+    let a = +prompt('nhap day so bat ki :');
+    let str = a.toString();
+    let b = [str[0]];
+    for (let i = 1; i < str.length; i++) {
+        if ((str[i - 1] % 2 === 0) && (str[i] % 2 === 0)) {
+            b.push('-', str[i]);
+        } else {
             b.push(str[i]);
         }
     }
     console.log(b.join(''));
-    
+
+
 </script>
 </body>
 </html>
