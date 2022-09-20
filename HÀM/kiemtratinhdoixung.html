@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function kiemTraDoiXung(str) {
+    let tempt = true;
+    for (let i=0;i<str.length/2;i++){
+      if (str[i]==str[str.length-i-1]) {
+        tempt = true;
+      }else{
+        tempt = false;
+      }
+    }
+    if (tempt){
+      return true
+    }else {
+      return false
+    }
+  }
+  alert(kiemTraDoiXung('abcdedcba'))
+</script>
+
+</body>
+</html>
