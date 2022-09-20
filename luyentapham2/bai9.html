@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = ['a','b','c','d','a','a','b']
+  function kiemTraKyTuTrongMang(arr,kytu) {
+    let count =0;
+    for (let i=0;i<arr.length;i++){
+      if (kytu==arr[i]){
+        count++;
+      }
+    }
+    if (count==0){
+      return -1
+    }else {
+      return count;
+    }
+  }
+  alert(kiemTraKyTuTrongMang(arr,'a'))
+
+
+</script>
+
+</body>
+</html>
