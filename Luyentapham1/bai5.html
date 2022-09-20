@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function kiemtra(str) {
+        let index =0;
+        if (arr1.indexOf(str)>=0){
+            index=arr1.indexOf(str)
+            alert(str + ' thuoc trom sao ' + arr2[index])
+        }else {
+            alert(str + ' khong nam trong trom sao nao ca')
+        }
+    }
+    let name = prompt('Nhap ten sao :')
+    kiemtra(name)
+</script>
+
+</body>
+</html>
