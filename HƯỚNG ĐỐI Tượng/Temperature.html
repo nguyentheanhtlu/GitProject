@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        class Temperature {
+        c;
+        constructor(c) {
+        this.c=c;
+    }
+        setC(c){
+        this.c =c;
+    }
+        getF(){
+        return this.c*1.8 + 32;
+    }
+        getK(){
+        return this.c+273.15;
+    }
+    }
+        temperature = new   Temperature(25);
+        document.write('Nhiệt độ chuyển sang độ F là : '+temperature.getF()+'<br>')
+        document.write('Nhiệt độ chuyển sang độ K la : '+temperature.getK())
+</script>
+
+
+</script>
+</body>
+</html>
